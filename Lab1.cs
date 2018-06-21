@@ -74,7 +74,7 @@ namespace LabPart1
                 //loop around at the while loop
             }
             return sum;
-            //need to add a iteration statment and for loop. still working on that ¯\_(ツ)_/¯
+            //need to add a iterative statment and for loop. still working on that ¯\_(ツ)_/¯
         }
     }
 }

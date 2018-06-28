@@ -3,7 +3,7 @@ using System;
 namespace LabPart1
 {
     class Program
-    {
+    {   //calling the method
         static void Main(string[] args)
         {
             //string input

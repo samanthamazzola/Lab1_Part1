@@ -2,9 +2,9 @@ using System;
 
 namespace LabPart1
 {
-    class Program
+    public class Program
     {   //calling the method
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //string input
             String numOne = "";

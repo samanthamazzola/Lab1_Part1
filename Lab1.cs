@@ -19,34 +19,31 @@ namespace LabPart1
             numTwo = Console.ReadLine();
 
 
-            if(numOne.Length != numTwo.Length)
+            if (numOne.Length != numTwo.Length)
             {
                 Console.WriteLine("Error: number of digits do not match\nTry again\n");
                 //  \n is like in line styling and gives you a new line
             }
 
-            for (int i = 0; i < 1; i++)
+            //convert string value to int
+            int sumOne = Int32.Parse(numOne);
+            int sumTwo = Int32.Parse(numTwo);
+
+
+            //evaluating which condition to run 
+            if ((numOne[0] + numTwo[0]) == (numOne[1] + numTwo[1]) && (numOne[1] + numTwo[1]) == (numOne[2] + numTwo[2]))
             {
-                int sumOne = Int32.Parse(numOne);
-                int sumTwo = Int32.Parse(numTwo);
+                Console.WriteLine("TRUE! Sums were the same.");
+            }
+            else
+            {
+                Console.WriteLine("FALSE! Sums were not the same.");
+            }
 
-
-                if ((numOne[0] + numTwo[0]) == (numOne[1] + numTwo[1]) && (numOne[1] + numTwo[1]) == (numOne[2] + numTwo[2]))
-                {
-                    Console.WriteLine("TRUE! Sums were the same.");
-                }
-                else
-                {
-                    Console.WriteLine("FALSE! Sums were not the same.");
-                }
-
-                {
-                    Console.WriteLine("\nPress any key to exit. ");
-                    Console.ReadKey();
-                }
+            {
+                Console.WriteLine("\nPress any key to exit. ");
+                Console.ReadKey();
             }
         }
     }
 }
-
-       
